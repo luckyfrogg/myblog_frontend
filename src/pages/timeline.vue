@@ -2,7 +2,7 @@
   <div class="timeline">
     <ul class="main_list">
       <li class="main_item">
-        <p class="archives_title">2020</p>
+        <p class="archives_title">🌱2020</p>
         <ul class="archives_list">
           <li class="archives_item">
             <section>
@@ -54,11 +54,13 @@ export default {
         font-weight: 700;
         color: #eee;
         font-size: 18px;
-        padding-bottom: 10px;
+        padding-bottom: 14px;
       }
       .archives_list {
         .archives_item {
-          margin-bottom: 12px;
+          margin-bottom: 14px;
+              padding: 0 12px;
+    border-left: 4px solid #ff6600;
           & > section {
             display: flex;
             align-items: center;
@@ -80,6 +82,16 @@ export default {
                 #c9cacc 5px,
                 #c9cacc
               );
+              transition: all .3s ease;
+              &:hover{
+                color: #ff6600;
+                background-image: linear-gradient(
+                transparent,
+                transparent 5px,
+                #ff6600 5px,
+                #ff6600
+              );
+              }
             }
           }
         }

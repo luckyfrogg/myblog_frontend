@@ -4,10 +4,10 @@
       <img src="http://img.lizhi0128.com/IMG_0509.jpg" alt="avatar" />
     </div>
     <section>
-      <h2>博客</h2>
+      <h2>🍊归档</h2>
       <nav>
         <div>
-          <router-link to="/timeline">博客</router-link>
+          <router-link to="/timeline">归档</router-link>
         </div>
         <div>
           <router-link to="/cate">分类</router-link>
@@ -68,6 +68,7 @@ export default {
     h2 {
       color: #c9cacc;
       font-size: 24px;
+          letter-spacing: 1.4px;
     }
     nav {
       margin-top: 4px;
@@ -75,11 +76,12 @@ export default {
       & > div {
         margin-right: 15px;
         padding: 0 15px 0 0;
-        border-right: 1px dotted #2bbc8a;
+        border-right: 1px dotted #ff6600;
         a {
           font-size: 14px;
-          color: #2bbc8a;
+          color: #ff6600;
           text-decoration: none;
+          letter-spacing: .8px;
 
           &:hover {
             background-repeat: repeat-x;
@@ -88,8 +90,8 @@ export default {
             background-image: linear-gradient(
               transparent,
               transparent 5px,
-              #2bbc8a 5px,
-              #2bbc8a
+              #ff6600 5px,
+              #ff6600
             );
           }
         }
