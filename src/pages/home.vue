@@ -38,20 +38,21 @@ export default {
 };
 </script>
 
-<style lang="less">
-#app {
-  background-color: #1d1f21;
-  min-height: 100vh;
-}
-</style>
+
 <style scoped lang="less">
 .home {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 120px;
+  padding: 40px 200px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
   & > main {
     padding-top: 20px;
     color: #c9cacc;
+    flex: 1;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 989px) {

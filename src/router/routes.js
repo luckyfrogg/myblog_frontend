@@ -44,6 +44,12 @@ const frameIn = [
             },
         ]
     },
+    {
+        path: '/detail/:id',
+        name: "Detail",
+        component: () => import('@/pages/detail'),
+        meta: { title: '胡橙汁的个人博客', requiresAuth: true }
+    }
 
 ]
 
@@ -54,8 +60,8 @@ const errorPage = [
     // 404
     {
         path: '*',
-        name: '404',
-        component: () => import('@/pages/common/404'),
+        name: 'Page404',
+        component: () => import('@/pages/common/page404'),
         meta: { title: '胡橙汁的个人博客-404' }
     }
 ]

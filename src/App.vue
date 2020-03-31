@@ -33,8 +33,12 @@ export default {
     padding: 0;
     box-sizing: border-box;
   }
+  
   body{
     font-size: 16px;
+    /deep/ .markdown-body a{
+    color: #ff6600;
+  }
   }
   ul{
     list-style: none;
@@ -44,6 +48,8 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2a2a2a;
+    background-color: #1d1f21;
+   min-height: 100vh;
   }
 #nav {
   padding: 30px;

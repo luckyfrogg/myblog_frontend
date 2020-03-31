@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div id="header">
     <div class="avatar" @click="goWelcome">
       <img src="http://img.lizhi0128.com/IMG_0509.jpg" alt="avatar" />
     </div>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.header {
+#header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
