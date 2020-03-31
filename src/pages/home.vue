@@ -3,7 +3,10 @@
     <header>
       <Header></Header>
     </header>
-    <router-view />
+    <main>
+      <router-view />
+    </main>
+
     <footer>
       <Footer></Footer>
     </footer>
@@ -26,9 +29,9 @@ export default {
   created() {},
   mounted() {},
   watch: {
-    '$route' (to, from) {
+    $route(to, from) {
       // 对路由变化作出响应...
-      console.log(to, from)
+      console.log(to, from);
     }
   },
   methods: {}
@@ -36,17 +39,26 @@ export default {
 </script>
 
 <style lang="less">
-#app{
-        background-color: #1d1f21;
-    min-height: 100vh;
-    
+#app {
+  background-color: #1d1f21;
+  min-height: 100vh;
 }
 </style>
 <style scoped lang="less">
-.home{
-      width: 1200px;
+.home {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 120px;
+  & > main {
+    padding-top: 20px;
+    color: #c9cacc;
+  }
+}
+@media (max-width: 989px) {
+  .home {
+    width: 100%;
     margin: 0 auto;
-    padding-top: 40px;
-
+    padding: 20px;
+  }
 }
 </style>

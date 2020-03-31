@@ -1,13 +1,13 @@
 <template>
   <div class="header">
-    <div class="avatar">
+    <div class="avatar" @click="goWelcome">
       <img src="http://img.lizhi0128.com/IMG_0509.jpg" alt="avatar" />
     </div>
     <section>
-      <h2>首页</h2>
+      <h2>博客</h2>
       <nav>
         <div>
-          <router-link to="/timeline">首页</router-link>
+          <router-link to="/timeline">博客</router-link>
         </div>
         <div>
           <router-link to="/cate">分类</router-link>
@@ -29,7 +29,13 @@ export default {
   computed: {},
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+      goWelcome(){
+          this.$router.push({
+              'path':'/welcome'
+          })
+      }
+  },
   components: {}
 };
 </script>
@@ -51,7 +57,7 @@ export default {
     height: 74px;
     overflow: hidden;
     border-radius: 50%;
-
+    cursor: pointer;
     img {
       flex-shrink: 0;
       max-width: 100%;

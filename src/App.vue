@@ -27,20 +27,24 @@ export default {
 }
 </script>
 <style lang="less">
+// @import url("../assets/css/common.css");
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  font-size: 16px;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2a2a2a;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-size: 16px;
+  }
+  ul{
+    list-style: none;
+  }
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2a2a2a;
+  }
 #nav {
   padding: 30px;
   a {
