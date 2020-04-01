@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 // 路由数据
 import routes from './routes'
 Vue.use(VueRouter)
+console.log('baseUrl:',process.env.BASE_URL);
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
