@@ -87,6 +87,7 @@ export default {
   computed: {},
   created() {
     this.getDetail();
+    
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll, true);
@@ -110,6 +111,11 @@ export default {
           block: 'start'
         })
       },
+      addViewNum(){
+        let _this = this;
+      _this.$post("/api/f/addViewNum", { articleId: _this.id }).then(res => {
+      });
+      },
     handleScroll(e) {
       //滚动监听进度条变化
       var clientHeight =
@@ -128,6 +134,7 @@ export default {
           return;
         }
         _this.detailData = res.data;
+        _this.addViewNum();
         _this.$nextTick(() => {
           genToc(".v-show-content", ".toc");
         });
