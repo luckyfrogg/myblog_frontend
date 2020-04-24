@@ -18,7 +18,6 @@
     </template>
   </div>
 </template>
-
 <script>
 import moment from "moment";
 import Header from "@/components/commonLayout/header";
