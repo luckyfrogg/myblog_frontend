@@ -1,6 +1,6 @@
 <template>
   <div class="cate">
- cate
+    暂未更新
   </div>
 </template>
 
