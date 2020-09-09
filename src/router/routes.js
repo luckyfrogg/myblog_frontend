@@ -5,18 +5,24 @@ const frameIn = [
     // 欢迎页
     {
         path: '/',
-        component: () => import('@/pages/welcome'),
-        redirect: { name: 'Welcome' },
-        meta: { title: '胡橙汁的个人博客', requiresAuth: true },
-        children: [
-            {
-                path: 'welcome',
-                name: "Welcome",
-                component: () => import('@/pages/welcome'),
-                meta: { title: '胡橙汁的个人博客', requiresAuth: true },
-            }
-        ]
+        component: () => import('@/pages/form'),
+        // redirect: { name: 'Welcome' },
+        meta: { title: '胡橙汁的个人博客', requiresAuth: true }
     },
+    // {
+    //     path: '/',
+    //     component: () => import('@/pages/welcome'),
+    //     redirect: { name: 'Welcome' },
+    //     meta: { title: '胡橙汁的个人博客', requiresAuth: true },
+    //     children: [
+    //         {
+    //             path: 'welcome',
+    //             name: "Welcome",
+    //             component: () => import('@/pages/welcome'),
+    //             meta: { title: '胡橙汁的个人博客', requiresAuth: true },
+    //         }
+    //     ]
+    // },
     {
         path: '/home',
         name: "Home",
